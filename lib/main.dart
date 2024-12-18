@@ -1,3 +1,4 @@
+import 'package:batch2ui/task1.dart';
 import 'package:flutter/material.dart';
 
 ///git init
@@ -15,12 +16,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: HomePage());
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: Task1(),
+    );
+
+    // HomePage());
   }
 }
 
@@ -41,7 +45,7 @@ class HomePage extends StatelessWidget {
           // mainAxisAlignment: MainAxisAlignment.,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('this is testing'),
+            const Text('this is testing  '),
             Text('this is testing'),
             Text('this is testing'),
             Text('this is testing'),
