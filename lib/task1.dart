@@ -14,9 +14,14 @@ class _Task1State extends State<Task1> {
       backgroundColor: Colors.blue,
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        leading: Icon(
-          Icons.menu,
-          color: Colors.white,
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(
+            Icons.menu,
+            color: Colors.white,
+          ),
         ),
         actions: [
           Padding(
@@ -111,11 +116,7 @@ class _Task1State extends State<Task1> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.mark_as_unread,
-                            color: Colors.blue,
-                            size: 100,
-                          ),
+                          Image.asset('assets/ic_launcher.png'),
                           Text(
                             'Unread',
                             style: TextStyle(color: Colors.black, fontSize: 20),
@@ -140,10 +141,9 @@ class _Task1State extends State<Task1> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Icon(
-                            Icons.mark_as_unread,
-                            color: Colors.blue,
-                            size: 100,
+                          Image.asset(
+                            'assets/image.png',
+                            height: 100,
                           ),
                           Text(
                             'Unread',

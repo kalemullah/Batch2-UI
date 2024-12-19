@@ -1,4 +1,5 @@
 import 'package:batch2ui/task1.dart';
+import 'package:batch2ui/task2.dart';
 import 'package:flutter/material.dart';
 
 ///git init
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Task1(),
+      home: Task2(),
+      //  Task1(),
     );
 
     // HomePage());
