@@ -1,3 +1,6 @@
+import 'package:batch2ui/image.dart';
+import 'package:batch2ui/inst.dart';
+import 'package:batch2ui/listview_builder.dart';
 import 'package:batch2ui/task1.dart';
 import 'package:batch2ui/task2.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +25,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Task2(),
+      home: InstaScreen(),
+      // ListviewBuiderScreen(),
+      //  ImageScreen(),
+      //  Task1(),
       //  Task1(),
     );
 

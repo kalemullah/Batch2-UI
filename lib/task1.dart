@@ -1,3 +1,4 @@
+import 'package:batch2ui/task2.dart';
 import 'package:flutter/material.dart';
 
 class Task1 extends StatefulWidget {
@@ -16,7 +17,8 @@ class _Task1State extends State<Task1> {
         backgroundColor: Colors.blue,
         leading: GestureDetector(
           onTap: () {
-            Navigator.pop(context);
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Task2()));
           },
           child: Icon(
             Icons.menu,
