@@ -1,6 +1,7 @@
 import 'package:batch2ui/image.dart';
 import 'package:batch2ui/inst.dart';
 import 'package:batch2ui/listview_builder.dart';
+import 'package:batch2ui/media_query/task3.dart';
 import 'package:batch2ui/task1.dart';
 import 'package:batch2ui/task2.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: InstaScreen(),
+      home: Task3(),
+      // InstaScreen(),
       // ListviewBuiderScreen(),
       //  ImageScreen(),
       //  Task1(),
@@ -35,4 +37,3 @@ class MyApp extends StatelessWidget {
     // HomePage());
   }
 }
-
