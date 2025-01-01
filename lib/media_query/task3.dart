@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Task3 extends StatefulWidget {
   const Task3({super.key});
@@ -18,12 +19,12 @@ class _Task3State extends State<Task3> {
         children: [
           Container(
             color: Colors.amber,
-            height: hight * .2,
-            width: width / 2,
+            height: 100.h,
+            width: 200.w,
           ),
           Container(
             color: Colors.red,
-            height: hight * .2,
+            height: hight * .3,
             width: width / 2,
             child: SingleChildScrollView(
               child: Column(
@@ -42,9 +43,12 @@ class _Task3State extends State<Task3> {
               ),
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Container(
             color: Colors.yellow,
-            height: hight * .6,
+            height: hight * .5,
             width: width,
             child: const Column(
               children: [

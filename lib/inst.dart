@@ -92,16 +92,46 @@ class _InstaScreenState extends State<InstaScreen> {
               starOffColor: const Color(0xffe7e8ea),
               starColor: Colors.yellow,
             ),
+
+            Stack(
+              clipBehavior: Clip.none,
+              alignment: AlignmentDirectional.center,
+              children: [
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.green,
+                ),
+                Positioned(
+                  top: -19,
+                  child: Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                ),
+              ],
+            ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: GridView.builder(
                     itemCount: 15,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        childAspectRatio: 1,
+                        childAspectRatio: 2 / 3,
                         mainAxisSpacing: 10,
                         crossAxisSpacing: 10,
-                        crossAxisCount: 3),
+                        crossAxisCount: 2),
                     itemBuilder: (context, index) {
                       return Container(
                         color: index.isEven ? Colors.green : Colors.red,
