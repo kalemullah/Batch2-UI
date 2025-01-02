@@ -1,7 +1,10 @@
+import 'package:batch2ui/custom_tabbar/custom_tabbar.dart';
 import 'package:batch2ui/image.dart';
 import 'package:batch2ui/inst.dart';
 import 'package:batch2ui/listview_builder.dart';
 import 'package:batch2ui/media_query/task3.dart';
+import 'package:batch2ui/stack/stack.dart';
+import 'package:batch2ui/tab_bar/tab_bar.dart';
 import 'package:batch2ui/task1.dart';
 import 'package:batch2ui/task2.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +42,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const InstaScreen(),
+      child: const CustomTabbarScreen(),
     );
   }
 }
