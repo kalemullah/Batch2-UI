@@ -1,3 +1,6 @@
+import 'package:batch2ui/bottom/bottom_screen.dart';
+import 'package:batch2ui/bottom/cured_bottom.dart';
+import 'package:batch2ui/bottom/splash_screen.dart';
 import 'package:batch2ui/custom_tabbar/custom_tabbar.dart';
 import 'package:batch2ui/image.dart';
 import 'package:batch2ui/inst.dart';
@@ -42,7 +45,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const CustomTabbarScreen(),
+      child:  BottomNavBar(),
     );
   }
 }
