@@ -19,6 +19,11 @@ class _BottomScreenState extends State<BottomScreen> {
       height: 400,
       width: double.infinity,
     ),
+    Container(
+      color: Colors.teal,
+      height: 400,
+      width: double.infinity,
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -26,17 +31,24 @@ class _BottomScreenState extends State<BottomScreen> {
       body: pages[currenindex],
       bottomNavigationBar: BottomNavigationBar(
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.email), label: 'email'),
-          BottomNavigationBarItem(icon: Icon(Icons.email), label: 'email'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.notification_important), label: 'Notification'),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.settings,
+                Icons.history,
               ),
-              label: 'settings'),
+              label: 'History'),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              label: 'proifile'),
         ],
         currentIndex: currenindex,
+        showUnselectedLabels: true,
         selectedItemColor: Colors.amber,
-        unselectedItemColor: Colors.teal,
+        unselectedItemColor: Colors.grey,
         onTap: (index) {
           setState(() {
             currenindex = index;

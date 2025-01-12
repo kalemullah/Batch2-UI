@@ -45,7 +45,9 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child:  BottomNavBar(),
+      child: SplashScreen(),
+
+      // BottomNavBar(),
     );
   }
 }
